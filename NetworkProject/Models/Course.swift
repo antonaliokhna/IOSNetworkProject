@@ -11,7 +11,7 @@ struct Course: Decodable {
     let id: Int
     let name: String
     let link: URL
-    let imageUrl: String
+    let imageUrl: URL
     let numberOfLessons: Int
     let numberOfTests: Int
 }

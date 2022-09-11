@@ -28,7 +28,7 @@ class CourseViewModel: CourseViewModelType {
     }
 
     var imageUrl: String {
-        course.imageUrl
+        course.imageUrl.description
     }
 
     init(course: Course) {
