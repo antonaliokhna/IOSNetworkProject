@@ -14,4 +14,9 @@ class WebsiteTests: XCTestCase {
         let website = Website(courses: nil, websiteName: nil, websiteDescription: nil)
         XCTAssertNotNil(website)
     }
+
+    func testInitWebsiteWithWebsiteNameParameter() {
+        let website = Website(courses: nil, websiteName: "Foo", websiteDescription: nil)
+        XCTAssertNotNil(website)
+    }
 }
