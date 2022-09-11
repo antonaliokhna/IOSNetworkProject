@@ -34,8 +34,19 @@
 		64D24DAA28CA3A11002A1614 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DA928CA3A11002A1614 /* CourseViewController.swift */; };
 		64D24DAC28CA3A5A002A1614 /* DetailCourseWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DAB28CA3A5A002A1614 /* DetailCourseWebViewViewController.swift */; };
 		64D24DAE28CA3A77002A1614 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DAD28CA3A77002A1614 /* PickerViewController.swift */; };
+		64D24DB628CDA9A5002A1614 /* NetworkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DB528CDA9A5002A1614 /* NetworkProjectTests.swift */; };
 		994D6A7ED0CDD32D85B6B010 /* Pods_NetworkProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38776CDF54A80F600086209 /* Pods_NetworkProject.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64D24DB728CDA9A5002A1614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64D24D4C28CA2FC4002A1614 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D24D5328CA2FC4002A1614;
+			remoteInfo = NetworkProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		64D24D5428CA2FC4002A1614 /* NetworkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +78,8 @@
 		64D24DA928CA3A11002A1614 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		64D24DAB28CA3A5A002A1614 /* DetailCourseWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCourseWebViewViewController.swift; sourceTree = "<group>"; };
 		64D24DAD28CA3A77002A1614 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		64D24DB328CDA9A5002A1614 /* NetworkProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D24DB528CDA9A5002A1614 /* NetworkProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProjectTests.swift; sourceTree = "<group>"; };
 		7227863150A5E8079660237F /* Pods-NetworkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkProject.release.xcconfig"; path = "Target Support Files/Pods-NetworkProject/Pods-NetworkProject.release.xcconfig"; sourceTree = "<group>"; };
 		B87D33D6ACAAACAB3944A13A /* Pods-NetworkProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkProject.debug.xcconfig"; path = "Target Support Files/Pods-NetworkProject/Pods-NetworkProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C38776CDF54A80F600086209 /* Pods_NetworkProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64D24DB028CDA9A5002A1614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				64D24D5628CA2FC4002A1614 /* NetworkProject */,
+				64D24DB428CDA9A5002A1614 /* NetworkProjectTests */,
 				64D24D5528CA2FC4002A1614 /* Products */,
 				B70B741C8906053C740A768A /* Pods */,
 				C813D0C496795C99B4FF0E82 /* Frameworks */,
@@ -98,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				64D24D5428CA2FC4002A1614 /* NetworkProject.app */,
+				64D24DB328CDA9A5002A1614 /* NetworkProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +231,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		64D24DB428CDA9A5002A1614 /* NetworkProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				64D24DB528CDA9A5002A1614 /* NetworkProjectTests.swift */,
+			);
+			path = NetworkProjectTests;
+			sourceTree = "<group>";
+		};
 		B70B741C8906053C740A768A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +278,24 @@
 			productReference = 64D24D5428CA2FC4002A1614 /* NetworkProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		64D24DB228CDA9A5002A1614 /* NetworkProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D24DB928CDA9A5002A1614 /* Build configuration list for PBXNativeTarget "NetworkProjectTests" */;
+			buildPhases = (
+				64D24DAF28CDA9A5002A1614 /* Sources */,
+				64D24DB028CDA9A5002A1614 /* Frameworks */,
+				64D24DB128CDA9A5002A1614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64D24DB828CDA9A5002A1614 /* PBXTargetDependency */,
+			);
+			name = NetworkProjectTests;
+			productName = NetworkProjectTests;
+			productReference = 64D24DB328CDA9A5002A1614 /* NetworkProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,6 +308,10 @@
 				TargetAttributes = {
 					64D24D5328CA2FC4002A1614 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					64D24DB228CDA9A5002A1614 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 64D24D5328CA2FC4002A1614;
 					};
 				};
 			};
@@ -277,6 +329,7 @@
 			projectRoot = "";
 			targets = (
 				64D24D5328CA2FC4002A1614 /* NetworkProject */,
+				64D24DB228CDA9A5002A1614 /* NetworkProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +342,13 @@
 				64D24D6428CA2FC5002A1614 /* LaunchScreen.storyboard in Resources */,
 				64D24D6128CA2FC5002A1614 /* Assets.xcassets in Resources */,
 				64D24D5F28CA2FC4002A1614 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D24DB128CDA9A5002A1614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +428,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64D24DAF28CDA9A5002A1614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D24DB628CDA9A5002A1614 /* NetworkProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64D24DB828CDA9A5002A1614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64D24D5328CA2FC4002A1614 /* NetworkProject */;
+			targetProxy = 64D24DB728CDA9A5002A1614 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		64D24D5D28CA2FC4002A1614 /* Main.storyboard */ = {
@@ -562,6 +638,42 @@
 			};
 			name = Release;
 		};
+		64D24DBA28CDA9A5002A1614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FC37NQ6S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fladecx.NetworkProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkProject.app/NetworkProject";
+			};
+			name = Debug;
+		};
+		64D24DBB28CDA9A5002A1614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FC37NQ6S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fladecx.NetworkProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkProject.app/NetworkProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,6 +691,15 @@
 			buildConfigurations = (
 				64D24D6928CA2FC5002A1614 /* Debug */,
 				64D24D6A28CA2FC5002A1614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D24DB928CDA9A5002A1614 /* Build configuration list for PBXNativeTarget "NetworkProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D24DBA28CDA9A5002A1614 /* Debug */,
+				64D24DBB28CDA9A5002A1614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
