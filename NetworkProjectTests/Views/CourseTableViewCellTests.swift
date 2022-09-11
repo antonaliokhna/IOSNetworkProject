@@ -6,30 +6,47 @@
 //
 
 import XCTest
+@testable import NetworkProject
 
 class CourseTableViewCellTests: XCTestCase {
 
+    var sut: CourseTableViewCell!
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc =
+        storyboard.instantiateViewController(
+            identifier: String(describing: CourseViewController.self)) as! CourseViewController
+
+        vc.loadViewIfNeeded()
+        let tableView = vc.tableView
+
+        sut = tableView?.dequeueReusableCell(withIdentifier: "cell") as? CourseTableViewCell
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testInitCourseTableViewCellTestsWhenLoadController() {
+        XCTAssertNotNil(sut)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testCorrectSetCourseTableViewCellParametersWhenSetViewModel() {
+        let viewModel = CourseViewModel(
+            course: Course(id: 1,
+                           name: "1",
+                           link: URL(string: "https://swiftbook.ru/contents/our-first-applications/")!,
+                           imageUrl: URL(string: "https://swiftbook.ru/wp-content/uploads/2018/03/2-courselogo.jpg")!,
+                           numberOfLessons: 1,
+                           numberOfTests: 1)
+        )
+
+        sut.viewModel = viewModel
+
+        XCTAssert(sut.nameLabel.text == viewModel.name )
+        XCTAssert(sut.countOfCoursesLabel.text == "Count of lessons: \(viewModel.countOfLessons)" )
+        XCTAssert(sut.countOfTestsLabel.text == "Count of tests: \(viewModel.countOfTests)" )
     }
 
 }
