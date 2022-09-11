@@ -14,6 +14,6 @@ protocol CoursesViewModelType {
     func countCourse() -> Int
     func fetchCourses(from stringUrl: String)
     func setSelectedItem(from indexPath: IndexPath)
-    func cellViewModel(from indexPath: IndexPath) -> CourseViewModelType?
+    func courseViewModel(from indexPath: IndexPath) -> CourseViewModelType?
 }
 

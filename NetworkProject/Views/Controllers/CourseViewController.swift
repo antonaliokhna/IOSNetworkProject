@@ -55,7 +55,7 @@ extension CourseViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CourseTableViewCell else { return UITableViewCell() }
-        cell.viewModel = coursesViewModel.cellViewModel(from: indexPath)
+        cell.viewModel = coursesViewModel.courseViewModel(from: indexPath)
         return cell
     }
 

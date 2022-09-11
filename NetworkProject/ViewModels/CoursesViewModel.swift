@@ -36,7 +36,7 @@ class CoursesViewModel: CoursesViewModelType {
         }
     }
 
-    func cellViewModel(from indexPath: IndexPath) -> CourseViewModelType? {
+    func courseViewModel(from indexPath: IndexPath) -> CourseViewModelType? {
         let course = courses[indexPath.row]
         return CourseViewModel(course: course)
     }
