@@ -35,7 +35,7 @@ class CourseViewModel: CourseViewModelType {
         self.course = course
     }
 
-    func getImage(completion: @escaping (UIImage?) -> ()) {
+    func fetchImage(completion: @escaping (UIImage?) -> ()) {
         NetworkSession.network.fetchImage(from: imageUrl) { image in
             completion(image)
         }

@@ -16,7 +16,7 @@ class CourseTableViewCellTests: XCTestCase {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc =
         storyboard.instantiateViewController(
-            identifier: String(describing: CourseViewController.self)) as! CourseViewController
+            identifier: String(describing: CoursesViewController.self)) as! CoursesViewController
 
         vc.loadViewIfNeeded()
         let tableView = vc.tableView

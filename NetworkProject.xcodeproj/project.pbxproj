@@ -31,10 +31,14 @@
 		64D24DA328CA39AA002A1614 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DA228CA39AA002A1614 /* HomeCollectionViewCell.swift */; };
 		64D24DA628CA39DA002A1614 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DA528CA39DA002A1614 /* HomeCollectionViewController.swift */; };
 		64D24DA828CA39F9002A1614 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DA728CA39F9002A1614 /* ImageViewController.swift */; };
-		64D24DAA28CA3A11002A1614 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DA928CA3A11002A1614 /* CourseViewController.swift */; };
+		64D24DAA28CA3A11002A1614 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DA928CA3A11002A1614 /* CoursesViewController.swift */; };
 		64D24DAC28CA3A5A002A1614 /* DetailCourseWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DAB28CA3A5A002A1614 /* DetailCourseWebViewViewController.swift */; };
 		64D24DAE28CA3A77002A1614 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DAD28CA3A77002A1614 /* PickerViewController.swift */; };
-		64D24DB628CDA9A5002A1614 /* NetworkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DB528CDA9A5002A1614 /* NetworkProjectTests.swift */; };
+		64D24DBE28CDACEC002A1614 /* CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DBD28CDACEC002A1614 /* CourseTests.swift */; };
+		64D24DC528CDB47B002A1614 /* WebsiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DC428CDB47B002A1614 /* WebsiteTests.swift */; };
+		64D24DCD28CDCEC9002A1614 /* HomeCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DCC28CDCEC9002A1614 /* HomeCollectionViewControllerTests.swift */; };
+		64D24DCF28CDF751002A1614 /* HomeCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DCE28CDF751002A1614 /* HomeCollectionViewCellTests.swift */; };
+		64D24DD228CE3389002A1614 /* CourseTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D24DD128CE3389002A1614 /* CourseTableViewCellTests.swift */; };
 		994D6A7ED0CDD32D85B6B010 /* Pods_NetworkProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38776CDF54A80F600086209 /* Pods_NetworkProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,11 +79,15 @@
 		64D24DA228CA39AA002A1614 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		64D24DA528CA39DA002A1614 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		64D24DA728CA39F9002A1614 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		64D24DA928CA3A11002A1614 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		64D24DA928CA3A11002A1614 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		64D24DAB28CA3A5A002A1614 /* DetailCourseWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCourseWebViewViewController.swift; sourceTree = "<group>"; };
 		64D24DAD28CA3A77002A1614 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		64D24DB328CDA9A5002A1614 /* NetworkProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64D24DB528CDA9A5002A1614 /* NetworkProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProjectTests.swift; sourceTree = "<group>"; };
+		64D24DBD28CDACEC002A1614 /* CourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTests.swift; sourceTree = "<group>"; };
+		64D24DC428CDB47B002A1614 /* WebsiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteTests.swift; sourceTree = "<group>"; };
+		64D24DCC28CDCEC9002A1614 /* HomeCollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewControllerTests.swift; sourceTree = "<group>"; };
+		64D24DCE28CDF751002A1614 /* HomeCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		64D24DD128CE3389002A1614 /* CourseTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCellTests.swift; sourceTree = "<group>"; };
 		7227863150A5E8079660237F /* Pods-NetworkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkProject.release.xcconfig"; path = "Target Support Files/Pods-NetworkProject/Pods-NetworkProject.release.xcconfig"; sourceTree = "<group>"; };
 		B87D33D6ACAAACAB3944A13A /* Pods-NetworkProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkProject.debug.xcconfig"; path = "Target Support Files/Pods-NetworkProject/Pods-NetworkProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C38776CDF54A80F600086209 /* Pods_NetworkProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,7 +232,7 @@
 			children = (
 				64D24DA528CA39DA002A1614 /* HomeCollectionViewController.swift */,
 				64D24DA728CA39F9002A1614 /* ImageViewController.swift */,
-				64D24DA928CA3A11002A1614 /* CourseViewController.swift */,
+				64D24DA928CA3A11002A1614 /* CoursesViewController.swift */,
 				64D24DAB28CA3A5A002A1614 /* DetailCourseWebViewViewController.swift */,
 				64D24DAD28CA3A77002A1614 /* PickerViewController.swift */,
 			);
@@ -234,9 +242,37 @@
 		64D24DB428CDA9A5002A1614 /* NetworkProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				64D24DB528CDA9A5002A1614 /* NetworkProjectTests.swift */,
+				64D24DCB28CDCEB8002A1614 /* Views */,
+				64D24DBC28CDACD2002A1614 /* Models */,
 			);
 			path = NetworkProjectTests;
+			sourceTree = "<group>";
+		};
+		64D24DBC28CDACD2002A1614 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64D24DBD28CDACEC002A1614 /* CourseTests.swift */,
+				64D24DC428CDB47B002A1614 /* WebsiteTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64D24DCB28CDCEB8002A1614 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64D24DD028CDF92E002A1614 /* Controllers */,
+				64D24DCE28CDF751002A1614 /* HomeCollectionViewCellTests.swift */,
+				64D24DD128CE3389002A1614 /* CourseTableViewCellTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64D24DD028CDF92E002A1614 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64D24DCC28CDCEC9002A1614 /* HomeCollectionViewControllerTests.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B70B741C8906053C740A768A /* Pods */ = {
@@ -408,7 +444,7 @@
 				64D24D7E28CA34E4002A1614 /* URLSessionNetworkManager.swift in Sources */,
 				64D24D5828CA2FC4002A1614 /* AppDelegate.swift in Sources */,
 				64D24D8228CA353F002A1614 /* CoursesViewModelType.swift in Sources */,
-				64D24DAA28CA3A11002A1614 /* CourseViewController.swift in Sources */,
+				64D24DAA28CA3A11002A1614 /* CoursesViewController.swift in Sources */,
 				64D24D5A28CA2FC4002A1614 /* SceneDelegate.swift in Sources */,
 				64D24D7728CA3477002A1614 /* NetworkSession.swift in Sources */,
 				64D24D8628CA3576002A1614 /* RequestDelegateType.swift in Sources */,
@@ -432,7 +468,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D24DB628CDA9A5002A1614 /* NetworkProjectTests.swift in Sources */,
+				64D24DBE28CDACEC002A1614 /* CourseTests.swift in Sources */,
+				64D24DCF28CDF751002A1614 /* HomeCollectionViewCellTests.swift in Sources */,
+				64D24DD228CE3389002A1614 /* CourseTableViewCellTests.swift in Sources */,
+				64D24DC528CDB47B002A1614 /* WebsiteTests.swift in Sources */,
+				64D24DCD28CDCEC9002A1614 /* HomeCollectionViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

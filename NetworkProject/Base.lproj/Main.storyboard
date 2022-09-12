@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Course View Controller-->
+        <!--Courses View Controller-->
         <scene sceneID="Iq9-pI-jP2">
             <objects>
-                <viewController id="106-e4-L6M" customClass="CourseViewController" customModule="NetworkProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CourseViewController" id="106-e4-L6M" customClass="CoursesViewController" customModule="NetworkProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gwv-fP-CWb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,7 +208,7 @@
         <!--Home Collection View Controller-->
         <scene sceneID="lgC-O6-jyo">
             <objects>
-                <collectionViewController id="uBn-kf-G8T" customClass="HomeCollectionViewController" customModule="NetworkProject" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="HomeCollectionViewController" id="uBn-kf-G8T" customClass="HomeCollectionViewController" customModule="NetworkProject" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Y5K-VF-ZEY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -19,7 +19,7 @@ class CourseTableViewCell: UITableViewCell {
             self.nameLabel.text = viewModel.name
             self.countOfCoursesLabel.text = "Count of lessons: \(viewModel.countOfLessons)"
             self.countOfTestsLabel.text = "Count of tests: \(viewModel.countOfTests)"
-            viewModel.getImage { [weak self] image in
+            viewModel.fetchImage { [weak self] image in
                 DispatchQueue.main.async {
                     self?.courseImageView.image = image
                 }

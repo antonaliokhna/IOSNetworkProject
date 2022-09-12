@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CourseViewController: UIViewController {
+class CoursesViewController: UIViewController {
     private var coursesViewModel: CoursesViewModelType = CoursesViewModel()
 
     @IBOutlet weak var tableView: UITableView!
@@ -43,7 +43,7 @@ class CourseViewController: UIViewController {
 
 //MARK: - UITableViewDelegate, UITableViewDataSource
 
-extension CourseViewController: UITableViewDelegate, UITableViewDataSource {
+extension CoursesViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130
@@ -67,7 +67,7 @@ extension CourseViewController: UITableViewDelegate, UITableViewDataSource {
 
 //MARK: - RequestDelegateType
 
-extension CourseViewController: RequestDelegateType {
+extension CoursesViewController: RequestDelegateType {
     func didUpdate() {
         tableView.reloadData()
         activityIndicatorView.isHidden = true

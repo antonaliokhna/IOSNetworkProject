@@ -14,7 +14,7 @@ class CoursesViewModel: CoursesViewModelType {
     var delegate: RequestDelegateType?
     var networkType: NetworkManagerType!
 
-    var courses: [Course] = [] {
+    private var courses: [Course] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.delegate?.didUpdate()

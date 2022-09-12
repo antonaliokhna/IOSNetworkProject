@@ -15,5 +15,5 @@ protocol CourseViewModelType: AnyObject {
     var link: URL { get }
     var imageUrl: String { get }
 
-    func getImage(completion: @escaping (UIImage?) -> () )
+    func fetchImage(completion: @escaping (UIImage?) -> () )
 }

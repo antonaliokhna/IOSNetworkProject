@@ -10,8 +10,6 @@ import UIKit
 class HomeCollectionViewController: UICollectionViewController {
     private let actions = ButtonAction.allCases
 
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +24,6 @@ class HomeCollectionViewController: UICollectionViewController {
 
     private func validateShowOkAlert(data: Data?) {
         DispatchQueue.main.async {
-            self.activityIndicator.stopAnimating()
             guard let data = data, let stringData = String(data: data, encoding: .utf8) else {
                 self.showOkAlert(title: "Empty", message: "Nil")
                 return
@@ -133,12 +130,10 @@ extension HomeCollectionViewController {
         case .downloadImage:
             performSegue(withIdentifier: "showImageVC", sender: nil)
         case .get:
-            activityIndicator.startAnimating()
             NetworkSession.network.getQuery(from: StringUrl.posts.rawValue) { [weak self] data in
                     self?.validateShowOkAlert(data: data)
             }
         case .post:
-            activityIndicator.startAnimating()
             let data = ["One": "I am one", "Two": "I am two"]
             NetworkSession.network.postQuery(from: StringUrl.posts.rawValue, data: data) { [weak self] data in
                 self?.validateShowOkAlert(data: data)
@@ -147,7 +142,6 @@ extension HomeCollectionViewController {
             performSegue(withIdentifier: "showCoursesTableVC", sender: nil)
         case .uploadImage:
             guard let image = UIImage(named: "1") else { return }
-            activityIndicator.startAnimating()
             NetworkSession.network.uploadImage(from: StringUrl.uploadImage.rawValue, image: image) { [weak self] data in
                 self?.validateShowOkAlert(data: data)
             }
