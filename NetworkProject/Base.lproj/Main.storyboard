@@ -12,7 +12,7 @@
         <!--Courses View Controller-->
         <scene sceneID="Iq9-pI-jP2">
             <objects>
-                <viewController storyboardIdentifier="CourseViewController" id="106-e4-L6M" customClass="CoursesViewController" customModule="NetworkProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoursesViewController" id="106-e4-L6M" customClass="CoursesViewController" customModule="NetworkProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gwv-fP-CWb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
