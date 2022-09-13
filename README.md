@@ -18,4 +18,4 @@ UIKit, MVVM, URLSession, Alamofire, GCD, UserDefaults, Notifications, Storyboard
 10. В проекте используется TableView и CollectionVide 
 11. Сохранения выбранного варианта работы сетью (URLSession/Alamofire) в локальное хранилище UserDefaults.
 
-![Example](NetworkProject/Assets.xcassets/Example.dataset/Example.gif)
+<img src="NetworkProject/Assets.xcassets/Example.dataset/Example.gif" width="300" height="650"/>
