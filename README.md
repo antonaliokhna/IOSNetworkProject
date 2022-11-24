@@ -1,21 +1,36 @@
-Краткое описание:
-Небольшой проект отображающий работу с сестью. Загрузка, выгрузка картинок c сервера при помощи api.
-Парсинг полученной информации от сервера в JSON, и соответствующее отображение. Отправка POST и GET запросов на сервер.
+# Network App
+### Short Description:
 
-Основной стек технологий: 
+A small project that displays the work with the sesta. Uploading, unloading pictures from the server using api.
+Parsing information from the server into JSON, and displaying it accordingly. Sending POST and GET requests to the server.
+
+---
+
+### Stack of technologies:
 UIKit, MVVM, URLSession, Alamofire, GCD, UserDefaults, Notifications, Storyboard. 
 
-Основная информаиця о проекте: 
-1. Проект написан полностью на UIKit.
-2. Использовал паттерн архитектуры MVVM. 
-3. В качестве сетевых запросов используется URLSessin и Alamofire. 
-4. Продемонстированна работа с многопоточностью GCD
-5. Работа с Notifications (оповещение об окончании загрузки в фоне)
-6. В проект инмпортирован менеджер CocoaPods.
-7. Написано небольшое количество простых Unit тестов.
-8. Продемонстированна работа с Storyboard.
-9. В проекте используется Navigation Controller.
-10. В проекте используется TableView и CollectionVide 
-11. Сохранения выбранного варианта работы сетью (URLSession/Alamofire) в локальное хранилище UserDefaults.
+---
 
-<img src="NetworkProject/Assets.xcassets/Example.dataset/Example.gif" width="300" height="650"/>
+### Basic information about the project: 
+- The project is written entirely in UIKit.
+- Used MVVM architecture pattern. 
+- Use URLSessin and Alamofire as network requests. 
+- Demonstrated work with multi-threaded GCD
+- Working with Notifications (notification of the end of loading in the background)
+- Imported CocoaPods manager into the project.
+- A small number of simple Unit tests are written.
+- Demonstrated work with the Storyboard.
+- Navigation Controller is used in the project.
+- TableView and CollectionVide are used in the project. 
+- Saves the selected networking option (URLSession/Alamofire) to the local UserDefaults repository.
+
+---
+
+### Screenshots and gif
+
+<img align=left src="NetworkProject/Assets.xcassets/HomeScreen.imageset/HomeScreen.png" width="300" height="650"/>
+<img src="NetworkProject/Assets.xcassets/ShooseNetworkScreen.imageset/ShooseNetworkScreen.png" width="300" height="650"/>
+
+---
+
+<img src="NetworkProject/Assets.xcassets/ExampleGif.dataset/ExampleGif.gif" width="300" height="650"/>
